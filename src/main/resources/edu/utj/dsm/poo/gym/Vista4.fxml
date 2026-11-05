@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainContainer" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utj.dsm.poo.gym.controlador.VistaController">
+   <left>
+      <VBox prefWidth="180.0" spacing="15.0" style="-fx-background-color: #2c3e50; -fx-padding: 20;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="MENÚ" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#abrirCliente" prefWidth="140.0" text="Clientes" />
+            <Button mnemonicParsing="false" onAction="#abrirProducto" prefWidth="140.0" text="Productos" />
+            <Button mnemonicParsing="false" onAction="#abrirMembresia" prefWidth="140.0" text="Membresías" />
+            <Separator prefWidth="200.0" />
+            <Button mnemonicParsing="false" onAction="#handleSalir" prefWidth="140.0" style="-fx-background-color: #e74c3c; -fx-text-fill: white;" text="Salir" />
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Seleccione un módulo del menú lateral">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

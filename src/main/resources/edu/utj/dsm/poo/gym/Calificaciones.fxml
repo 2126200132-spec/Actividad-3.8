@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane fitToWidth="true" prefHeight="936.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.utj.dsm.poo.gym.controlador.CalificacionesController">   <content>
+      <VBox alignment="TOP_CENTER" spacing="15.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <!-- Título y Nombre -->
+            <VBox alignment="CENTER" spacing="5.0">
+               <children>
+                  <Label style="-fx-font-size: 22px; -fx-font-weight: bold;" text="Calificaciones" />
+                  <Label style="-fx-font-size: 14px; -fx-text-fill: #555555; -fx-font-weight: bold;" text="Miguel Alejandro Ortiz Serrano" />
+               </children>
+            </VBox>
+            
+            <!-- U1 -->
+            <VBox spacing="10.0" style="-fx-border-color: #bdc3c7; -fx-padding: 10; -fx-background-color: #f8f9f9;">
+               <children>
+                  <Label style="-fx-font-weight: bold;" text="Unidad 1" />
+                  <GridPane hgap="8.0" vgap="8.0">
+                     <children>
+                        <Label text="Act 1:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct1_1" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <Label text="Act 2:" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct1_2" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                        <Label text="Act 3:" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct1_3" prefWidth="50.0" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+                        <Label text="Examen:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtExamen1" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="SER:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtSer1" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                  </GridPane>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Button onAction="#calcularU1" text="Calcular" />
+                        <Label fx:id="lblRes1" style="-fx-font-weight: bold;" text="Resultado: -" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+
+            <!-- U2 -->
+            <VBox spacing="10.0" style="-fx-border-color: #bdc3c7; -fx-padding: 10; -fx-background-color: #f8f9f9;">
+               <children>
+                  <Label style="-fx-font-weight: bold;" text="Unidad 2" />
+                  <GridPane hgap="8.0" vgap="8.0">
+                     <children>
+                        <Label text="Act 1:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct2_1" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <Label text="Act 2:" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct2_2" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                        <Label text="Act 3:" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct2_3" prefWidth="50.0" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+                        <Label text="Act 4:" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct2_4" prefWidth="50.0" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+                        <Label text="Act 5:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtAct2_5" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Act 6:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtAct2_6" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label text="Examen:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtExamen2" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="SER:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtSer2" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                  </GridPane>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Button onAction="#calcularU2" text="Calcular" />
+                        <Label fx:id="lblRes2" style="-fx-font-weight: bold;" text="Resultado: -" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+
+            <!-- U3 -->
+            <VBox spacing="10.0" style="-fx-border-color: #bdc3c7; -fx-padding: 10; -fx-background-color: #f8f9f9;">
+               <children>
+                  <Label style="-fx-font-weight: bold;" text="Unidad 3" />
+                  <GridPane hgap="8.0" vgap="8.0">
+                     <children>
+                        <Label text="Act 1:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct3_1" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <Label text="Act 2:" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct3_2" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                        <Label text="Act 3:" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct3_3" prefWidth="50.0" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+                        <Label text="Act 4:" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct3_4" prefWidth="50.0" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+                        <Label text="Act 5:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtAct3_5" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Act 6:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtAct3_6" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label text="Examen:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtExamen3" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="SER:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtSer3" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                  </GridPane>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Button onAction="#calcularU3" text="Calcular" />
+                        <Label fx:id="lblRes3" style="-fx-font-weight: bold;" text="Resultado: -" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+
+            <!-- U4 -->
+            <VBox spacing="10.0" style="-fx-border-color: #bdc3c7; -fx-padding: 10; -fx-background-color: #f8f9f9;">
+               <children>
+                  <Label style="-fx-font-weight: bold;" text="Unidad 4" />
+                  <GridPane hgap="8.0" vgap="8.0">
+                     <children>
+                        <Label text="Act 1:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct4_1" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                        <Label text="Act 2:" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct4_2" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                        <Label text="Act 3:" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct4_3" prefWidth="50.0" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+                        <Label text="Act 4:" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+                        <TextField fx:id="txtAct4_4" prefWidth="50.0" GridPane.columnIndex="7" GridPane.rowIndex="0" />
+                        <Label text="Act 5:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtAct4_5" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label text="Act 6:" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtAct4_6" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label text="Act 7:" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtAct4_7" prefWidth="50.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <Label text="Act 8:" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                        <TextField fx:id="txtAct4_8" prefWidth="50.0" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                        <Label text="Examen:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtExamen4" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="SER:" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <TextField fx:id="txtSer4" prefWidth="50.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+                  </GridPane>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Button onAction="#calcularU4" text="Calcular" />
+                        <Label fx:id="lblRes4" style="-fx-font-weight: bold;" text="Resultado: -" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+
+            <!-- FINAL -->
+            <VBox alignment="CENTER" spacing="10.0" style="-fx-padding: 10;">
+               <children>
+                  <Button onAction="#calcularCalificacionFinal" text="Calcular calificación final" />
+                  <Label fx:id="lblResFinal" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
